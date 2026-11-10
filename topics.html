@@ -1,0 +1,86 @@
+file:///data/user/0/com.foxdebug.acodefree/files/public/bhupendra-portfolio/topics.html<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Topics – Bhupendra Kumar</title>
+<style>
+:root{--bg:#f5f7f6;--card:#fff;--ink:#14201b;--mute:#586a62;--line:#d5dfda;--l:36%;--s:70%;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0f0d;--card:#121a17;--ink:#e8f1ed;--mute:#9bb0a6;--line:#24342d;--l:62%}}
+:root[data-theme="dark"]{--bg:#0a0f0d;--card:#121a17;--ink:#e8f1ed;--mute:#9bb0a6;--line:#24342d;--l:62%}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",system-ui,-apple-system,sans-serif;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+.top{display:flex;align-items:center;gap:10px;padding:10px 18px;max-width:980px;margin:0 auto}
+.top a{color:hsl(var(--h,150) var(--s) var(--l));font-weight:600;text-decoration:none;margin-right:auto}
+.theme,.chips button{font:inherit;cursor:pointer;color:var(--ink);background:none;border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:0 18px 10px;max-width:980px;margin:0 auto;white-space:nowrap}
+.chips button[aria-current="true"]{background:hsl(var(--h) var(--s) var(--l));color:#07110d;border-color:transparent;font-weight:600}
+#view{--a:hsl(var(--h) var(--s) var(--l));--soft:hsl(var(--h) 60% var(--l)/.14)}
+.hero{margin:24px 0;padding:28px 22px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(135deg,var(--soft),transparent 70%),var(--card);animation:in .4s ease both}
+.ic{font-size:2.6rem;line-height:1}
+h1{font-size:clamp(1.9rem,6vw,3rem);margin:.3em 0 .2em;letter-spacing:-.02em;line-height:1.1}
+.tag{color:var(--a);font-weight:600;margin:0}
+.lead{color:var(--mute);max-width:60ch;margin:.6em 0 0}
+h2{font-size:1.3rem;margin:30px 0 12px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;animation:in .4s ease both}
+.card h3{margin:0 0 4px;font-size:1rem}
+.card p{margin:0;color:var(--mute);font-size:.92rem}
+.chip{display:inline-block;margin-top:8px;font-size:.74rem;border:1px solid var(--line);border-radius:6px;padding:1px 8px}
+.chip.p{color:var(--a);border-color:var(--a);background:var(--soft)}
+.proj{border-left:4px solid var(--a)}
+.todo{color:var(--a);font-style:italic}
+.btns{margin:30px 0 10px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{font:inherit;cursor:pointer;background:var(--a);color:#07110d;border:0;border-radius:10px;padding:10px 18px;font-weight:600;text-decoration:none}
+.btn.g{background:none;color:var(--ink);border:1px solid var(--line)}
+footer{margin:40px 0;padding-top:20px;border-top:1px solid var(--line);color:var(--mute);font-size:.88rem}
+@keyframes in{from{opacity:0;transform:translateY(8px)}}
+@media(prefers-reduced-motion:reduce){.hero,.card{animation:none}}
+:focus-visible{outline:2px solid hsl(var(--h) var(--s) var(--l));outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+<div class="top"><a href="index.html#tools" id="back">← Back to portfolio</a><button class="theme" id="th" aria-label="Change theme">Theme</button></div>
+<nav class="chips" id="chips" aria-label="Topics"></nav>
+</header>
+<main class="wrap" id="view"></main>
+<footer class="wrap">Bhupendra Kumar · Learning by building. Growing through experimentation.</footer>
+<script>
+(function(){
+var T=[
+{id:"termux",i:"⌨️",h:155,n:"Termux",t:"Android as a dev machine",p:"I use Termux to learn Linux and build projects directly on my phone: files, packages, Python, Node.js, Git and C++.",w:[["Linux commands","Navigating, files, permissions","Practiced"],["Package management","pkg, Python, Node.js, Clang","Practiced"],["Shell scripting","Automating repeated tasks","Learning"],["Linux userspace (proot)","Running a full distro","Planned"]],j:["Termux Knowledge Hub","A guide I wrote covering Termux, Linux basics, 40+ commands, tutorials and troubleshooting."],x:"Add one screenshot of your Termux setup."},
+{id:"content",i:"🎬",h:20,n:"Content Creation",t:"Ideas turned into posts",p:"This area covers writing, short videos and posts that explain what I learn so others can follow along.",w:[["Writing","Guides and explanations"],["Short video","Screen recordings and reels"],["Social posts","Sharing progress"]],x:"Add your channels, post counts or best-performing post."},
+{id:"git",i:"🌿",h:12,n:"Git and GitHub",t:"Every change tracked",p:"Git keeps the history of my projects, so I can experiment without fear and go back if something breaks.",w:[["Git basics","init, add, commit, status, log","Practiced"],["Branches","branch, merge","Learning"],["GitHub","push, pull, clone, README","Learning"]],j:["Portfolio repository","Add the link to your GitHub repository here."],x:"Add your GitHub username and link."},
+{id:"web",i:"🌐",h:200,n:"Web Development",t:"From idea to a live page",p:"I build responsive websites with HTML, CSS and JavaScript, and I am learning React with Vite.",w:[["HTML","Page structure","Practiced"],["CSS","Flexbox, Grid, responsive design","Practiced"],["JavaScript","DOM, events, functions","Practiced"],["React and Vite","Component-based apps","Learning"]],j:["Restaurant Website System","A storefront for restaurants with menu, business details and a way to contact them. HTML, CSS, JS, PHP."],x:"Add a live link for each website."},
+{id:"ai",i:"🤖",h:265,n:"AI",t:"Build faster, understand every line",p:"I use AI assistants to write and fix code, then run it in Termux and make sure I understand it.",w:[["AI-assisted coding","Clear tasks, reviewing output","Practiced"],["Python automation","Scripts for files and tasks","Practiced"],["AI APIs","Using models inside my own app","Planned"]],j:["AI Coding Bridge","An experiment in moving AI-written code into my Android projects with less manual work."],x:"Add one real result, such as steps saved."},
+{id:"devtools",i:"🛠️",h:45,n:"Dev Tools",t:"The tools behind the code",p:"A good setup saves hours. My daily workflow combines a terminal, an editor and a browser.",w:[["Termux","Terminal and commands","Practiced"],["Acode","Editing project files","Practiced"],["npm and Node.js","Packages and scripts","Practiced"],["Clang and Make","Building C++ programs","Learning"]],x:"Add the tools you use most and why."},
+{id:"acode",i:"📱",h:230,n:"Acode",t:"A code editor in my pocket",p:"Acode is the mobile code editor I use on my Android phone to write, edit, organize and manage programming files. It lets me build web projects without depending on a computer. Acode is my main editor and Termux is my command line.",w:[["HTML, CSS and JavaScript","Writing and editing web pages","Practiced"],["Responsive portfolios","Building sites that fit every screen","Practiced"],["Project files","Managing files and folders","Practiced"],["React files","Editing React project files","Learning"],["Working with Termux","Acode for editing, Termux for commands","Practiced"],["Build and test","Previewing and testing web projects","Practiced"]],j:["This portfolio website","Written, edited and tested in Acode on my Android phone."],x:"Add a screenshot of your Acode workspace."},
+{id:"marketing",i:"📣",h:340,n:"Digital Marketing",t:"Helping good work get seen",p:"This area covers how people find a website or business online: search, social media and clear messages.",w:[["SEO basics","Titles, speed, clear content"],["Social media","Consistent posting"],["Analytics","Reading what visitors do"]],x:"Add a campaign, page or account you worked on."},
+{id:"database",i:"🗄️",h:175,n:"Database",t:"Where the data lives",p:"Websites like a restaurant menu need stored data. I am learning how to design and query it.",w:[["MySQL","Tables and queries","Learning"],["SQLite","Small local databases","Planned"]],x:"Add a table design or a query you wrote."},
+{id:"productivity",i:"⚡",h:95,n:"Productivity",t:"More done with less stress",p:"This area covers the systems I use to plan, focus and keep learning every day.",w:[["Planning","Daily and weekly goals"],["Notes","Keeping what I learn"],["Focus","Time blocks and breaks"]],x:"Add the apps or habits that work for you."},
+{id:"design",i:"🎨",h:310,n:"Graphic Design",t:"Making ideas look clear",p:"Good design makes a website easier to trust. This area covers layout, color, type and visuals.",w:[["Layout","Spacing and hierarchy"],["Color and type","Readable and consistent"],["Visuals","Posters, banners, icons"]],x:"Add 2 or 3 of your designs."}
+];
+var chips=document.getElementById("chips"),view=document.getElementById("view"),cur=0;
+T.forEach(function(t,k){var b=document.createElement("button");b.textContent=t.i+" "+t.n;b.onclick=function(){location.hash=t.id};chips.appendChild(b)});
+function skill(s){return "<div class='card'><h3>"+s[0]+"</h3><p>"+s[1]+"</p>"+(s[2]?"<span class='chip"+(s[2]==="Practiced"?" p":"")+"'>"+s[2]+"</span>":"")+"</div>"}
+function render(){
+var id=location.hash.slice(1);cur=Math.max(0,T.findIndex(function(t){return t.id===id}));var t=T[cur];
+document.documentElement.style.setProperty("--h",t.h);document.title=t.n+" – Bhupendra Kumar";
+[].forEach.call(chips.children,function(b,k){b.setAttribute("aria-current",k===cur);if(k===cur)b.scrollIntoView({inline:"center",block:"nearest"})});
+var known=t.w[0].length>2;
+view.innerHTML="<section class='hero'><div class='ic'>"+t.i+"</div><h1>"+t.n+"</h1><p class='tag'>"+t.t+"</p><p class='lead'>"+t.p+"</p></section>"+
+"<h2>"+(known?"Skills":"What this covers")+"</h2><div class='grid'>"+t.w.map(skill).join("")+"</div>"+
+"<h2>Project</h2><div class='card proj'>"+(t.j?"<h3>"+t.j[0]+"</h3><p>"+t.j[1]+"</p>":"<h3>Your work goes here</h3>")+"<p class='todo' style='margin-top:8px'>"+t.x+"</p></div>"+
+"<div class='btns'><button class='btn' id='nx'>Next: "+T[(cur+1)%T.length].n+" →</button><a class='btn g' href='mailto:mrbhupendrakumar664@gmail.com'>Contact me</a></div>";
+document.getElementById("nx").onclick=function(){location.hash=T[(cur+1)%T.length].id};
+window.scrollTo(0,0)}
+addEventListener("hashchange",render);render();
+var r=document.documentElement;
+document.getElementById("th").onclick=function(){var d=r.getAttribute("data-theme")==="dark"||(r.getAttribute("data-theme")!=="light"&&matchMedia("(prefers-color-scheme:dark)").matches);r.setAttribute("data-theme",d?"light":"dark")};
+})();
+</script>
+</body>
+</html>
